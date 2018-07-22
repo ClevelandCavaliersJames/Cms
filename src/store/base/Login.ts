@@ -27,7 +27,7 @@ export const M_LOGOUT = 'M_LOGOUT'
 export const G_USER_PERMISSIONS = 'G_USER_PERMISSIONS';
 export const M_USER_PERMISSIONS = 'M_USER_PERMISSIONS';
 export const A_USER_PERMISSIONS = 'A_USER_PERMISSIONS';
-export const UUID = get_uuid();
+// export const UUID = "123";
 export interface State {
     UID: number,
     StoreID: number,
@@ -36,7 +36,7 @@ export interface State {
     Store: any,
     User: any,
     Stores: any[],
-    UUID: string,
+    // UUID: string,
     Permissions: any,
 }
 const state: State = {
@@ -58,7 +58,7 @@ const state: State = {
         UnitID: 0,
         Title: ''
     },
-    UUID: '',
+    // UUID: '',
     Permissions: {
         // [Permission.ShowOrderCreateBtn]: {}
     },
@@ -71,9 +71,9 @@ const getters = {
         return state.Store;
     },
     [G_UNIT]() { return state.Unit },
-    [G_UUID]() {
-        return state.UUID
-    },
+    // [G_UUID]() {
+    //     return state.UUID
+    // },
     [G_USER_PERMISSIONS]() {
         return state.Permissions;
     }

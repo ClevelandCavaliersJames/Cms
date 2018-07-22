@@ -20,11 +20,6 @@ export function menu(Name: string, Router?: RouterPath | String, Icon?: string, 
 }
 const state: State = {
     Menus: [
-        // menu("控制面板", "", "", [
-        //     menu('控制面板', RouterPath.Dashboard, "", [], Permission.ShowDashboard),
-        //     // menu('系统设定', RouterPath.OrdersList, ""),
-        // ], Permission.ShowDashboard),
-
     ],
 
 }
