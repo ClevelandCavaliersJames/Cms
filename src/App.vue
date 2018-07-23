@@ -1,5 +1,8 @@
 <template>
   <div style="text-align:center height:60px">
+    <!-- <Row>
+      <h2>CMS像博客一样的东西，可以发表文章，检录（像江之前写的差不多）</h2>
+    </Row> -->
     <Row >
       <Col span="12" class="GridBack" color="black">
         <Col span="1">
@@ -17,7 +20,7 @@
         <Col span="8">
         <br>
           <tr class="layui-nav layui-bg-cyen" lay-filter="">
-            <td class="layui-nav-item"><a href="">首页</a></td>
+            <td class="layui-nav-item"><a href="#/Main">首页</a></td>
             <td class="layui-nav-item"><a href="">我们的产品</a>
               <dl class="layui-nav-child">
                 <dd><a href="#/MainUI">主页面UI设计模板</a></dd>
@@ -27,6 +30,7 @@
                 <dd><a href="#/PersonalUI">个人中心页面设计模板</a></dd>
               </dl>
             </td>
+            <td class="layui-nav-item"><a href="">Castle-ui</a></td>
             <td class="layui-nav-item"><a href="#/AboutUs">关于我们</a></td>
             <td class="layui-nav-item"><a href="#/Community">社区</a></td>
             <td class="layui-nav-item" style="margin-left:10px"><a href="">个人中心</a>
@@ -40,6 +44,11 @@
             <td class="layui-nav-item"><a href="#/Register">注册</a></td>
           </tr>      
         </Col>
+      </Col>
+    </Row>
+    <Row>
+      <Col span="12">
+          
       </Col>
     </Row>
     <router-view></router-view>
