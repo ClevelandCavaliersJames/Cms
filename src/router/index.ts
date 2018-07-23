@@ -7,6 +7,7 @@ Vue.use(Router)
 declare let require: any;
 export enum RouterPath {
     // Login = '/',
+    Main='/Main',
     LoginUI='/LoginUI',
     MainUI='/MainUI',
     ModalUI='/ModalUI',
@@ -28,6 +29,11 @@ const router = new Router({
         //     meta: {
         //     }
         // },
+        {
+            path:RouterPath.Main,
+            name:'主页面',
+            component:r=>require(["../components/Main.vue"],r)
+        },
         {
             path: RouterPath.LoginUI,
             name:'登陆界面UI',
