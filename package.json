@@ -8,7 +8,7 @@
     "dev": "cd src && tsc -w",
     "tsc": "cd src && tsc",
     "run": "node dist/index.js",
-    "start": "npm run run"
+    "start": "npm start"
   },
   "author": "",
   "license": "ISC",
@@ -16,6 +16,6 @@
     "@types/koa": "^2.0.45"
   },
   "dependencies": {
-    "castle-koa": "^1.0.16"
+    "castle-koa": "^1.0.33"
   }
 }
