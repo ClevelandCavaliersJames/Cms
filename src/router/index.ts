@@ -6,7 +6,7 @@ import { A_RELOGIN } from '../store/base/Login'
 Vue.use(Router)
 declare let require: any;
 export enum RouterPath {
-    // Login = '/',
+    Login = '/',
     Main='/Main',
     LoginUI='/LoginUI',
     MainUI='/MainUI',
@@ -21,14 +21,14 @@ export enum RouterPath {
 }
 const router = new Router({
     routes: [
-        // {
-        //     path: RouterPath.Login,
-        //     name: '登录',
-        //     component: r =>
-        //         require(["../user/Login.vue"], r),
-        //     meta: {
-        //     }
-        // },
+        {
+            path: RouterPath.Login,
+            name: '登录',
+            component: r =>
+                require(["../user/Login.vue"], r),
+            meta: {
+            }
+        },
         {
             path:RouterPath.Main,
             name:'主页面',
