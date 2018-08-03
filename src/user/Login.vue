@@ -42,11 +42,10 @@ export default class Login extends Vue {
   ID: string | number = "";
   Password: any = [];
   login(v: number, k: any) {
-    console.log(v);
     if (!v) {
       this.$msg("请输入账号");
-    }else if(!k){
-      this.$msg("请输入密码");
+    }else{
+      this.$emit("input",v)
     }
   }
   mounted() {
