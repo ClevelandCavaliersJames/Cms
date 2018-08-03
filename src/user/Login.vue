@@ -9,12 +9,13 @@
             <Card title="登入" style="width:600px">
               <Form>
                 <FormItem label="账号" class="length">
-                    <Input placeholder="请输入您的用户名"></Input>
+                    <Input placeholder="请输入您的用户名" v-model="ID"></Input>
                 </FormItem>
                 <FormItem label="密码" class="length">
-                    <InputPassword placeholder="请输入密码"></InputPassword>
+                    <InputPassword placeholder="请输入密码" v-model="Password"></InputPassword>
                 </FormItem>
               </Form>
+              <Button @click="login(ID,Password)" type="primary">登录</Button>
             </Card>    
           </Col>
         </Col>
@@ -22,7 +23,7 @@
     </div>
 </template>
 <script lang="ts">
-import Vue from "vue";
+import Vue from "../vue";
 import Component from "vue-class-component";
 import { Getter, Action } from "vuex-class";
 //TODO 导入搜索接口
@@ -38,6 +39,16 @@ import { Getter, Action } from "vuex-class";
 })
 //TODO 更改类名
 export default class Login extends Vue {
+  ID: string | number = "";
+  Password: any = [];
+  login(v: number, k: any) {
+    console.log(v);
+    if (!v) {
+      this.$msg("请输入账号");
+    }else if(!k){
+      this.$msg("请输入密码");
+    }
+  }
   mounted() {
     //组件被加载的时候触发
   }
@@ -47,7 +58,7 @@ export default class Login extends Vue {
 }
 </script>
 <style scoped>
-.length{
-  width:300px;
+.length {
+  width: 300px;
 }
 </style>

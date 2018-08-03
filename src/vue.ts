@@ -2,6 +2,7 @@ import Vue from 'vue'
 export default class vue extends Vue {
     public $cookie: Cookie | any
     $Message: any = {}
+    $msg: any = {}
     static $layer: any;
     static $notify: any;
 
