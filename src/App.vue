@@ -27,6 +27,7 @@
             <td class="layui-nav-item"><a href="#/Architecture">架构设计</a></td>
             <td class="layui-nav-item"><a href="#/DataBase">数据库设计管理</a></td>
             <td class="layui-nav-item"><a href="#/CodeAutomation">代码自动部署</a></td>
+            <td class="layui-nav-item"><a href="#/DevelopingDocument">开发文档</a></td>
             <td class="layui-nav-item"><a href="">我们的产品</a>
               <dl class="layui-nav-child">
                 <dd><a href="#/MainUI">主页面UI设计模板</a></dd>

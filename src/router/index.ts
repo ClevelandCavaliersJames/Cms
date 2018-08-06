@@ -24,6 +24,7 @@ export enum RouterPath {
     Architecture = '/Architecture',
     DataBase = '/DataBase',
     CodeAutomation = '/CodeAutomation',
+    DevelopingDocument = '/DevelopingDocument',
 }
 const router = new Router({
     routes: [
@@ -116,6 +117,11 @@ const router = new Router({
             path: RouterPath.CodeAutomation,
             name: '代码自动部署',
             component: r => require(["../components/CodeAutomation.vue"], r)
+        },
+        {
+            path: RouterPath.DevelopingDocument,
+            name: '开发文档',
+            component: r => require(["../components/DevelopingDocument.vue"], r)
         }
     ]
 })
