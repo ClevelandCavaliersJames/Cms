@@ -40,7 +40,7 @@
                 <dd><a href="#/Shopping"><i class="layui-icon layui-icon-cart"></i>&nbsp;&nbsp;我的商品</a></dd>
               </dl>
             </td>
-            <td class="layui-nav-item"><a href="#/">登录</a></td>
+            <td class="layui-nav-item"><a href="#/Login">登录</a></td>
             <td class="layui-nav-item"><a href="#/Register">注册</a></td>
           </tr>      
         </Col>

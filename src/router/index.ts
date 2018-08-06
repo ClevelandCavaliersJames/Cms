@@ -6,7 +6,7 @@ import { A_RELOGIN } from '../store/base/Login'
 Vue.use(Router)
 declare let require: any;
 export enum RouterPath {
-    Login = '/',
+    Login = '/Login',
     Main='/Main',
     LoginUI='/LoginUI',
     MainUI='/MainUI',
