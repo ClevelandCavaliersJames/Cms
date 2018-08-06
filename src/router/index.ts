@@ -19,6 +19,7 @@ export enum RouterPath {
     AboutUs = '/AboutUs',
     Community = "/Community",
     DemandManagement = '/DemandManagement',
+    ProjectManagement = '/ProjectManagement',
 }
 const router = new Router({
     routes: [
@@ -86,6 +87,11 @@ const router = new Router({
             path: RouterPath.DemandManagement,
             name: '需求管理',
             component: r => require(["../components/DemandManagement.vue"], r)
+        },
+        {
+            path: RouterPath.ProjectManagement,
+            name: '项目管理',
+            component: r => require(["../components/ProjectManagement.vue"], r)
         }
     ]
 })
