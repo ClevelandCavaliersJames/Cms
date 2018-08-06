@@ -21,6 +21,8 @@ export enum RouterPath {
     DemandManagement = '/DemandManagement',
     ProjectManagement = '/ProjectManagement',
     DesignManagement = '/DesignManagement',
+    Architecture = '/Architecture',
+    DataBase = '/DataBase',
 }
 const router = new Router({
     routes: [
@@ -98,6 +100,16 @@ const router = new Router({
             path: RouterPath.DesignManagement,
             name: '设计管理',
             component: r => require(["../components/DesignManagement.vue"], r)
+        },
+        {
+            path: RouterPath.Architecture,
+            name: '架构设计',
+            component: r => require(["../components/Architecture.vue"], r)
+        },
+        {
+            path: RouterPath.DataBase,
+            name: '数据库设计与管理',
+            component: r => require(["../components/DataBase.vue"], r)
         }
     ]
 })
