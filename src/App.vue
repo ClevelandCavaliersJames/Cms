@@ -23,6 +23,7 @@
             <td class="layui-nav-item"><a href="#/Main">首页</a></td>
             <td class="layui-nav-item"><a href="#/DemandManagement">需求管理</a></td>
             <td class="layui-nav-item"><a href="#/ProjectManagement">项目管理</a></td>
+            <td class="layui-nav-item"><a href="#/DesignManagement">设计管理</a></td>
             <td class="layui-nav-item"><a href="">我们的产品</a>
               <dl class="layui-nav-child">
                 <dd><a href="#/MainUI">主页面UI设计模板</a></dd>
