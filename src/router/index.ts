@@ -23,6 +23,7 @@ export enum RouterPath {
     DesignManagement = '/DesignManagement',
     Architecture = '/Architecture',
     DataBase = '/DataBase',
+    CodeAutomation = '/CodeAutomation',
 }
 const router = new Router({
     routes: [
@@ -110,6 +111,11 @@ const router = new Router({
             path: RouterPath.DataBase,
             name: '数据库设计与管理',
             component: r => require(["../components/DataBase.vue"], r)
+        },
+        {
+            path: RouterPath.CodeAutomation,
+            name: '代码自动部署',
+            component: r => require(["../components/CodeAutomation.vue"], r)
         }
     ]
 })
