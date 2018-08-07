@@ -7,35 +7,35 @@
             <Col span="8">
                 <Table class="layui-table">
                     <tr>
-                        <td colspan="4" style="text-align:center">以下需求由项目经理填写</td>
+                        <td colspan="4" style="text-align:center;font-size:26px">以下需求由项目经理填写</td>
                     </tr>
                     <tr>
-                        <td>项目经理</td>
-                        <td contenteditable="true" input=text></td>
-                        <td>联系人电话</td>
-                        <td contenteditable="true"></td>
+                        <td style="width:150px ;font-size:  16px">项目经理</td>
+                        <td style="width:150px" contenteditable="true"></td>
+                        <td style="width:150px;font-size:  16px">联系人电话</td>
+                        <td style="width:150px" contenteditable="true"></td>
                     </tr>
                     <tr>
-                        <td>项目参与人员及负责人</td>
+                        <td style="font-size:  16px">项目参与人员及负责人</td>
                         <td>   
                             <Form style="width:200px">
                                 <Select v-model="index" :options="name"  @change="selected(index)" >
                                 </Select>
                             </Form>
                         </td>
-                        <td>联系人电话</td>
+                        <td style="font-size:  16px">联系人电话</td>
                         <td>{{phone[i]}}</td>
                     </tr>
                     <tr>
-                        <td>需求说明书</td>
+                        <td style="font-size:  16px">需求说明书</td>
+                        <td colspan="3" contenteditable="true" :v-model="t"></td>
+                    </tr>
+                    <tr>
+                        <td style="font-size:  16px">需求目标</td>
                         <td colspan="3" contenteditable="true"></td>
                     </tr>
                     <tr>
-                        <td>需求目标</td>
-                        <td colspan="3" contenteditable="true"></td>
-                    </tr>
-                    <tr>
-                        <td>项目里程碑</td>
+                        <td style="font-size:  16px">项目里程碑</td>
                         <td colspan="3" contenteditable="true"></td>
                     </tr>
                 </Table>
@@ -61,6 +61,7 @@ export default class ProjectManagement extends Vue {
     c:any='';
     d:any='';
     e:any='';
+    t:any;
     i:number=0;
     index:any=''
     phone:any=["","12345","09876"]
