@@ -10,15 +10,15 @@
                         <td colspan="4" style="text-align:center">以下需求由项目经理填写</td>
                     </tr>
                     <tr>
-                        <td class="td">项目经理</td>
-                        <td class="td"> <input v-model="a" style="width:100%;height:100%;padding:0px" /></td>
+                        <td>项目经理</td>
+                        <td contenteditable="true" input=text></td>
                         <td>联系人电话</td>
-                        <td class="td"><input  v-model="b" style="width:100%;height:100%;padding:0px" /></td>
+                        <td contenteditable="true"></td>
                     </tr>
                     <tr>
                         <td>项目参与人员及负责人</td>
                         <td>   
-                            <Form style="width:100px">
+                            <Form style="width:200px">
                                 <Select v-model="index" :options="name"  @change="selected(index)" >
                                 </Select>
                             </Form>
@@ -28,15 +28,15 @@
                     </tr>
                     <tr>
                         <td>需求说明书</td>
-                        <td class="td" colspan="3"><Textarea  v-model="c" style="width:100%;height:100%;padding:0px"></Textarea ></td>
+                        <td colspan="3" contenteditable="true"></td>
                     </tr>
                     <tr>
                         <td>需求目标</td>
-                        <td class="td" colspan="3"><Textarea  v-model="d" style="width:100%;height:100%;padding:0px"></Textarea ></td>
+                        <td colspan="3" contenteditable="true"></td>
                     </tr>
                     <tr>
                         <td>项目里程碑</td>
-                        <td class="td" colspan="3"><Textarea  v-model="e" style="width:100%;height:100%;padding:0px"></Textarea ></td>
+                        <td colspan="3" contenteditable="true"></td>
                     </tr>
                 </Table>
             </Col>
@@ -71,8 +71,4 @@ export default class ProjectManagement extends Vue {
 </script>
 
 <style scope>
-.td{
-    margin:0px;
-    padding:0px;
-}
 </style>

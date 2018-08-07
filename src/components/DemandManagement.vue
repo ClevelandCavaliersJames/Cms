@@ -11,21 +11,21 @@
                     </tr>
                     <tr>
                         <td class="td">需求提出人</td>
-                        <td class="td"> <input v-model="a" style="width:100%;height:100%;padding:0px" /></td>
+                        <td class="td" contenteditable="true"></td>
                         <td>联系人电话</td>
-                        <td class="td"><input  v-model="b" style="width:100%;height:100%;padding:0px" /></td>
+                        <td class="td" contenteditable="true"></td>
                     </tr>
                     <tr>
                         <td>需求原因/目的</td>
-                        <td class="td" colspan="3"><Textarea  v-model="a" style="width:100%;height:100%;padding:0px"></Textarea ></td>
+                        <td class="td" colspan="3" contenteditable="true"></td>
                     </tr>
                     <tr>
                         <td>需求描述</td>
-                        <td class="td" colspan="3"><Textarea  v-model="b" style="width:100%;height:100%;padding:0px"></Textarea ></td>
+                        <td class="td" colspan="3" contenteditable="true"></td>
                     </tr>
                     <tr>
                         <td>期望上线日期</td>
-                        <td colspan="3"><input  v-model="c" style="width:100%;height:100%;padding:0px" /></td>
+                        <td colspan="3" contenteditable="true"></td>
                     </tr>
                 </Table>
             </Col>
