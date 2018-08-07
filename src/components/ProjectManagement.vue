@@ -71,4 +71,8 @@ export default class ProjectManagement extends Vue {
 </script>
 
 <style scope>
+.td{
+    margin:0px;
+    padding:0px;
+}
 </style>
