@@ -31,7 +31,7 @@
             <td class="layui-nav-item"><a href="">我们的产品</a>
               <dl class="layui-nav-child">
                 <dd><a href="#/MainUI">主页面UI设计模板</a></dd>
-                <dd><a href="#/LoginUI">登陆页面设计模板</a></dd>
+                <dd><a href="#/LoginUI">登录页面设计模板</a></dd>
                 <dd><a href="#/RegisterUI">注册页面设计模板</a></dd>
                 <dd><a href="#/ModalUI">Modal页面设计模板</a></dd>
                 <dd><a href="#/PersonalUI">个人中心页面设计模板</a></dd>

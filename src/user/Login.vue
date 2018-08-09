@@ -6,7 +6,7 @@
             &nbsp;
           </Col>
           <Col span="3">
-            <Card title="登入" style="width:600px">
+            <Card title="登入" style="width:400px;background:#D1D1D1">
               <Form>
                 <FormItem label="账号" class="length">
                     <Input placeholder="请输入您的用户名" v-model="ID"></Input>
@@ -18,7 +18,7 @@
               <Button @click="login(ID,Password)" type="primary">登录</Button>
             </Card>    
           </Col>
-        </Col>
+          </Col>
       </Row>
     </div>
 </template>
