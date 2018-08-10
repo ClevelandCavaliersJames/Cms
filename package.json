@@ -17,6 +17,10 @@
   },
   "dependencies": {
     "@types/sequelize": "^4.27.24",
-    "castle-koa": "^1.0.36"
+    "castle-koa": "^1.0.36",
+    "mysql": "^2.16.0",
+    "pg": "^7.4.3",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.38.0"
   }
 }
