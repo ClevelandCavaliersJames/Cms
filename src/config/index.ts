@@ -10,7 +10,7 @@ export default class Config extends KoaConfig {
         return {
             database:'cms',
             username:'root',
-            password:'123456',
+            password:'root',
             options:{
                 host:'localhost',
                 port:'3306',
