@@ -27,7 +27,7 @@
                         <td style="font-size:  16px">需求重要性</td>
                         <td >
                             <Form style="width:200px">
-                                <Select  :options="importance" v-model="Importance">
+                                <Select  :options="importance" @change="selected">
                                 </Select>
                             </Form>
                         </td>
@@ -36,7 +36,7 @@
                         <td style="font-size:  16px">项目周期</td>
                         <td ><input type="text" class="input" v-model="ProjectCycle"></td>
                         <td style="font-size:  16px">计划完成时间</td>
-                        <td ><input type="text" class="input" v-model="PlannedTime"></td>
+                        <td ><Input type="date" class="input" v-model="PlannedTime"></Input></td>
                     </tr>
                     <tr>
                         <td style="font-size:  16px">项目负责人</td>
@@ -107,8 +107,8 @@ export default class DemandManagement extends Vue {
     DemanUser:any="";
     Importance:any="";
     importance:any=[
-        {text:'紧急',value:'1'},
-        {text:'标准',value:'2'},
+        {text:'紧急',value:'紧急'},
+        {text:'标准',value:'标准'},
     ]
     ProjectCycle:any="";
     PlannedTime:any="";
@@ -122,8 +122,28 @@ export default class DemandManagement extends Vue {
     Scheme:any="";
     Difficulties:any="";
     Precondition:any="";
+    selected(v:any){
+        this.Importance=v;
+    }
     save(v:any){
-        console.log(this.Importance.value)
+        console.log(this.Maker)
+        console.log(this.DeterminingP)
+        console.log(this.PutTime)
+        console.log(this.ConfirmationTime)
+        console.log(this.DemanUser)
+        console.log(this.Importance)
+        console.log(this.ProjectCycle)
+        console.log(this.PlannedTime)
+        console.log(this.ProjectLeader)
+        console.log(this.DemandLeader)
+        console.log(this.DemandID)
+        console.log(this.Descriptive)
+        console.log(this.Technological)
+        console.log(this.Acceptance)
+        console.log(this.Enclosure)
+        console.log(this.Scheme)
+        console.log(this.Difficulties)
+        console.log(this.Precondition)
     }
 }
 </script>
