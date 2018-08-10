@@ -16,6 +16,7 @@
     "@types/koa": "^2.0.45"
   },
   "dependencies": {
+    "@types/sequelize": "^4.27.24",
     "castle-koa": "^1.0.36"
   }
 }
