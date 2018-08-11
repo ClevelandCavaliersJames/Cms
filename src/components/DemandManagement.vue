@@ -95,68 +95,99 @@
 <script lang = "ts">
 import Vue from "../vue";
 import Component from "vue-class-component";
+import DemandApi from "../api/Demand";
+
 @Component({
   props: {},
   components: {}
 })
 export default class DemandManagement extends Vue {
-    data:any={};
-    Maker:any="";
-    DeterminingP:any="";
-    PutTime:any="";
-    ConfirmationTime:any="";
-    DemanUser:any="";
-    Importance:any="";
-    importance:any=[
-        {text:'紧急',value:'紧急'},
-        {text:'标准',value:'标准'},
-    ]
-    ProjectCycle:any="";
-    PlannedTime:any="";
-    ProjectLeader:any="";
-    DemandLeader:any="";
-    DemandID:any="";
-    Descriptive:any="";
-    Technological:any="";
-    Acceptance:any="";
-    Enclosure:any="";
-    Scheme:any="";
-    Difficulties:any="";
-    Precondition:any="";
-    selected(v:any){
-        this.Importance=v;
+  data: any = {};
+  Maker: any = "";
+  DeterminingP: any = "";
+  PutTime: any = "";
+  ConfirmationTime: any = "";
+  DemanUser: any = "";
+  Importance: any = "";
+  importance: any = [
+    { text: "紧急", value: "紧急" },
+    { text: "标准", value: "标准" }
+  ];
+  ProjectCycle: any = "";
+  PlannedTime: any = "";
+  ProjectLeader: any = "";
+  DemandLeader: any = "";
+  DemandID: any = "";
+  Descriptive: any = "";
+  Technological: any = "";
+  Acceptance: any = "";
+  Enclosure: any = "";
+  Scheme: any = "";
+  Difficulties: any = "";
+  Precondition: any = "";
+  selected(v: any) {
+    this.Importance = v;
+  }
+  // save(v:any){
+  //     this.data={
+  //         Maker:this.Maker,
+  //         DeterminingP:this.DeterminingP,
+  //         PutTime:this.PutTime,
+  //         ConfirmationTime:this.ConfirmationTime,
+  //         DemanUser:this.DemanUser,
+  //         Importance:this.Importance,
+  //         ProjectCycle:this.ProjectCycle,
+  //         PlannedTime:this.PlannedTime,
+  //         ProjectLeader:this.ProjectLeader,
+  //         DemandLeader:this.DemandLeader,
+  //         DemandID:this.DemandID,
+  //         Descriptive:this.Descriptive,
+  //         Technological:this.Technological,
+  //         Acceptance:this.Acceptance,
+  //         Enclosure:this.Enclosure,
+  //         Scheme:this.Scheme,
+  //         Difficulties:this.Difficulties,
+  //         Precondition:this.Precondition,
+  //     }
+  //     console.log(this.data)
+  // }
+  async save(v: any) {
+    this.data = {
+      Maker: this.Maker,
+      DeterminingP: this.DeterminingP,
+      PutTime: this.PutTime,
+      ConfirmationTime: this.ConfirmationTime,
+      DemanUser: this.DemanUser,
+      Importance: this.Importance,
+      ProjectCycle: this.ProjectCycle,
+      PlannedTime: this.PlannedTime,
+      ProjectLeader: this.ProjectLeader,
+      DemandLeader: this.DemandLeader,
+      DemandID: this.DemandID,
+      Descriptive: this.Descriptive,
+      Technological: this.Technological,
+      Acceptance: this.Acceptance,
+      Enclosure: this.Enclosure,
+      Scheme: this.Scheme,
+      Difficulties: this.Difficulties,
+      Precondition: this.Precondition
+    };
+    let res = await DemandApi.addDemand(this.data);
+    if(res){
+        this.$msg("保存成功")
     }
-    save(v:any){
-        this.data={
-            Maker:this.Maker,
-            DeterminingP:this.DeterminingP,
-            PutTime:this.PutTime,
-            ConfirmationTime:this.ConfirmationTime,
-            DemanUser:this.DemanUser,
-            Importance:this.Importance,
-            ProjectCycle:this.ProjectCycle,
-            PlannedTime:this.PlannedTime,
-            ProjectLeader:this.ProjectLeader,
-            DemandLeader:this.DemandLeader,
-            DemandID:this.DemandID,
-            Descriptive:this.Descriptive,
-            Technological:this.Technological,
-            Acceptance:this.Acceptance,
-            Enclosure:this.Enclosure,
-            Scheme:this.Scheme,
-            Difficulties:this.Difficulties,
-            Precondition:this.Precondition,
-        }
-        console.log(this.data)
+    else{
+        this.$msg("保存失败")
     }
+  }
 }
 </script>
 
 <style scope>
-.input{
-        border-left-width: 0px;
-    border-bottom-width: 0px;
-    border-top-width: 0px;
-    border-right-width: 0px;
+.input {
+  border-left-width: 0px;
+  border-bottom-width: 0px;
+  border-top-width: 0px;
+  border-right-width: 0px;
 }
 </style>

@@ -1,8 +1,13 @@
 import Request from 'castle-request';
-import Demand from '../relation/Demand';
 
 class Demand extends Request{
-    async addDemand(v:any){
-        return await this._post('addDemand',{v:v})
+    /**
+     * 增加需求
+     * @param data
+     */
+    async addDemand (data:any){
+        return await this._post('addDemand',{data:data})
     }
 }
+const r = new Demand();
+export default r
