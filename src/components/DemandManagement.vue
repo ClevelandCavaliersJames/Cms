@@ -128,29 +128,6 @@ export default class DemandManagement extends Vue {
   selected(v: any) {
     this.Importance = v;
   }
-  // save(v:any){
-  //     this.data={
-  //         Maker:this.Maker,
-  //         DeterminingP:this.DeterminingP,
-  //         PutTime:this.PutTime,
-  //         ConfirmationTime:this.ConfirmationTime,
-  //         DemanUser:this.DemanUser,
-  //         Importance:this.Importance,
-  //         ProjectCycle:this.ProjectCycle,
-  //         PlannedTime:this.PlannedTime,
-  //         ProjectLeader:this.ProjectLeader,
-  //         DemandLeader:this.DemandLeader,
-  //         DemandID:this.DemandID,
-  //         Descriptive:this.Descriptive,
-  //         Technological:this.Technological,
-  //         Acceptance:this.Acceptance,
-  //         Enclosure:this.Enclosure,
-  //         Scheme:this.Scheme,
-  //         Difficulties:this.Difficulties,
-  //         Precondition:this.Precondition,
-  //     }
-  //     console.log(this.data)
-  // }
   async save(v: any) {
     this.data = {
       Maker: this.Maker,
@@ -172,6 +149,7 @@ export default class DemandManagement extends Vue {
       Difficulties: this.Difficulties,
       Precondition: this.Precondition
     };
+    console.log(this.data)
     let res = await DemandApi.addDemand(this.data);
     if(res){
         this.$msg("保存成功")

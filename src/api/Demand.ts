@@ -8,7 +8,7 @@ class Demand extends Request{
      * @param data
      */
     async addDemand (data:any){
-        return await this._post('addDemand',{data:data})
+        return await this._post('addDemand',data)
     }
 }
 const r = new Demand();
