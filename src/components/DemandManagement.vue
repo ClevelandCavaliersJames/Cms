@@ -11,19 +11,19 @@
                     </tr>
                     <tr>
                         <td style="width:  150px;font-size:  16px" class="td">需求提出人</td>
-                        <td style="width:  150px" class="td"  ><input type="text" class="input" v-model="Maker"></td>
+                        <td style="width:  150px" class="td"  ><input type="text" class="input" v-model="Maker" placeholder="请输入需求提出人"></td>
                         <td style="width:  150px;font-size:  16px">确认人</td>
-                        <td style="width:  150px" class="td" ><input type="text" class="input" v-model="DeterminingP"></td>
+                        <td style="width:  150px" class="td" ><input type="text" class="input" placeholder="请输入确认人" v-model="DeterminingP"></td>
                     </tr>
                     <tr>
                         <td style="font-size:  16px">提出时间</td>
-                        <td ><Input type="date" class="input" v-model="PutTime"></Input></td>
+                        <td ><Input type="date" class="input" placeholder="请输入提出时间" v-model="PutTime"></Input></td>
                         <td style="font-size:  16px">确认时间</td>
-                        <td ><Input type="date" class="input" v-model="ConfirmationTime"></Input></td>
+                        <td ><Input type="date" class="input" placeholder="请输入确认时间" v-model="ConfirmationTime"></Input></td>
                     </tr>
                     <tr>
                         <td style="font-size:  16px">需求使用人员</td>
-                        <td ><input type="text" class="input" v-model="DemanUser"></td>
+                        <td ><input type="text" class="input" placeholder="请输入需求使用人员" v-model="DemanUser"></td>
                         <td style="font-size:  16px">需求重要性</td>
                         <td >
                             <Form style="width:200px">
@@ -34,33 +34,33 @@
                     </tr>
                     <tr>
                         <td style="font-size:  16px">项目周期</td>
-                        <td ><input type="text" class="input" v-model="ProjectCycle"></td>
+                        <td ><input type="text" class="input" placeholder="请输入项目周期" v-model="ProjectCycle"></td>
                         <td style="font-size:  16px">计划完成时间</td>
-                        <td ><Input type="date" class="input" v-model="PlannedTime"></Input></td>
+                        <td ><Input type="date" class="input" placeholder="请输入计划完成时间" v-model="PlannedTime"></Input></td>
                     </tr>
                     <tr>
                         <td style="font-size:  16px">项目负责人</td>
-                        <td ><input type="text" class="input" v-model="ProjectLeader"></td>
+                        <td ><input type="text" class="input" placeholder="请输入项目负责人" v-model="ProjectLeader"></td>
                         <td style="font-size:  16px">需求负责人</td>
-                        <td ><input type="text" class="input" v-model="DemandLeader"></td>
+                        <td ><input type="text" class="input" placeholder="请输入需求负责人" v-model="DemandLeader"></td>
                     </tr>
                     <tr>
                         <td style="font-size:  16px">需求编号</td>
-                        <td ><input type="text" class="input" v-model="DemandID"></td>
+                        <td ><input type="text" class="input" placeholder="请输入需求编号" v-model="DemandID"></td>
                         <td style="font-size:  16px"></td>
                         <td style="font-size:  16px"></td>
                     </tr>
                     <tr>
                         <td style="font-size:  16px">需求描述</td>
-                        <td colspan="3" style="height:  150px" ><input type="text" class="input" v-model="Descriptive"></td>
+                        <td colspan="3" style="height:  150px" ><input type="text" class="input" placeholder="请输入需求描述" v-model="Descriptive"></td>
                     </tr>
                     <tr>
                         <td style="font-size:  16px">需求流程</td>
-                        <td colspan="3" style="height:  150px" ><input type="text" class="input" v-model="Technological"></td>
+                        <td colspan="3" style="height:  150px" ><input type="text" class="input" placeholder="请输入需求流程" v-model="Technological"></td>
                     </tr>
                     <tr>
                         <td style="font-size:  16px">验收标准</td>
-                        <td colspan="3" style="height:  150px" ><input type="text" class="input" v-model="Acceptance"></td>
+                        <td colspan="3" style="height:  150px" ><input type="text" class="input" placeholder="请输入验收标准" v-model="Acceptance"></td>
                     </tr>
                     <tr>
                         <td style="font-size:  16px">需求附件</td>
@@ -68,15 +68,15 @@
                     </tr>
                     <tr>
                         <td style="font-size:  16px">技术方案</td>
-                        <td colspan="3" ><input type="text" class="input" v-model="Scheme"></td>
+                        <td colspan="3" ><input type="text" class="input" placeholder="请输入技术方案" v-model="Scheme"></td>
                     </tr>
                     <tr>
                         <td style="font-size:  16px">技术难点</td>
-                        <td colspan="3" ><input type="text" class="input" v-model="Difficulties"></td>
+                        <td colspan="3" ><input type="text" class="input" placeholder="请输入技术难点" v-model="Difficulties"></td>
                     </tr>
                     <tr>
                         <td style="font-size:  16px">需求前置条件</td>
-                        <td colspan="3" ><input type="text" class="input" v-model="Precondition"></td>
+                        <td colspan="3" ><input type="text" class="input" placeholder="请输入需求前置条件" v-model="Precondition"></td>
                     </tr>
                 </Table>
             </Col>
