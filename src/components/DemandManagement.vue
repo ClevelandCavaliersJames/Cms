@@ -103,6 +103,7 @@ import DemandApi from "../api/Demand";
 })
 export default class DemandManagement extends Vue {
   data: any = {};
+  result:any="";
   Maker: any = "";
   DeterminingP: any = "";
   PutTime: any = "";
@@ -128,6 +129,10 @@ export default class DemandManagement extends Vue {
   selected(v: any) {
     this.Importance = v;
   }
+  async getDemand() {
+    let res = await DemandApi.getDemand();
+    this.result = res;
+  }
   async save(v: any) {
     this.data = {
       Maker: this.Maker,
@@ -149,13 +154,12 @@ export default class DemandManagement extends Vue {
       Difficulties: this.Difficulties,
       Precondition: this.Precondition
     };
-    console.log(this.data)
+    console.log(this.data);
     let res = await DemandApi.addDemand(this.data);
-    if(res){
-        this.$msg("保存成功")
-    }
-    else{
-        this.$msg("保存失败")
+    if (res) {
+      this.$msg("保存成功");
+    } else {
+      this.$msg("保存失败");
     }
   }
 }

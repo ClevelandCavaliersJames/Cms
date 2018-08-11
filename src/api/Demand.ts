@@ -10,6 +10,12 @@ class Demand extends Request{
     async addDemand (data:any){
         return await this._post('addDemand',data)
     }
+    /**
+     * 获取信息
+     */
+    async getDemand(){
+        return await this._post('getDemand',{})
+    }
 }
 const r = new Demand();
 export default r
