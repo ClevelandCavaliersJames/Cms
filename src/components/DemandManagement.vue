@@ -100,6 +100,7 @@ import Component from "vue-class-component";
   components: {}
 })
 export default class DemandManagement extends Vue {
+    data:any={};
     Maker:any="";
     DeterminingP:any="";
     PutTime:any="";
@@ -126,24 +127,27 @@ export default class DemandManagement extends Vue {
         this.Importance=v;
     }
     save(v:any){
-        console.log(this.Maker)
-        console.log(this.DeterminingP)
-        console.log(this.PutTime)
-        console.log(this.ConfirmationTime)
-        console.log(this.DemanUser)
-        console.log(this.Importance)
-        console.log(this.ProjectCycle)
-        console.log(this.PlannedTime)
-        console.log(this.ProjectLeader)
-        console.log(this.DemandLeader)
-        console.log(this.DemandID)
-        console.log(this.Descriptive)
-        console.log(this.Technological)
-        console.log(this.Acceptance)
-        console.log(this.Enclosure)
-        console.log(this.Scheme)
-        console.log(this.Difficulties)
-        console.log(this.Precondition)
+        this.data={
+            Maker:this.Maker,
+            DeterminingP:this.DeterminingP,
+            PutTime:this.PutTime,
+            ConfirmationTime:this.ConfirmationTime,
+            DemanUser:this.DemanUser,
+            Importance:this.Importance,
+            ProjectCycle:this.ProjectCycle,
+            PlannedTime:this.PlannedTime,
+            ProjectLeader:this.ProjectLeader,
+            DemandLeader:this.DemandLeader,
+            DemandID:this.DemandID,
+            Descriptive:this.Descriptive,
+            Technological:this.Technological,
+            Acceptance:this.Acceptance,
+            Enclosure:this.Enclosure,
+            Scheme:this.Scheme,
+            Difficulties:this.Difficulties,
+            Precondition:this.Precondition,
+        }
+        console.log(this.data)
     }
 }
 </script>
