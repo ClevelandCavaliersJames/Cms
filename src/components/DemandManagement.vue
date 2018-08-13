@@ -52,15 +52,15 @@
                     </tr>
                     <tr>
                         <td style="font-size:  16px">需求描述</td>
-                        <td colspan="3" style="height:  150px" ><input type="text" class="input" placeholder="请输入需求描述" v-model="Descriptive"></td>
+                        <td colspan="3" style="height:  150px" ><textarea type="text" class="input" style="height:  150px;width:650px" placeholder="请输入需求描述" v-model="Descriptive"></textarea></td>
                     </tr>
                     <tr>
                         <td style="font-size:  16px">需求流程</td>
-                        <td colspan="3" style="height:  150px" ><input type="text" class="input" placeholder="请输入需求流程" v-model="Technological"></td>
+                        <td colspan="3" style="height:  150px" ><textarea type="text" class="input" style="height:  150px;width:650px" placeholder="请输入需求流程" v-model="Technological"></textarea></td>
                     </tr>
                     <tr>
                         <td style="font-size:  16px">验收标准</td>
-                        <td colspan="3" style="height:  150px" ><input type="text" class="input" placeholder="请输入验收标准" v-model="Acceptance"></td>
+                        <td colspan="3" style="height:  150px" ><textarea type="text" class="input" style="height:  150px;width:650px" placeholder="请输入验收标准" v-model="Acceptance"></textarea></td>
                     </tr>
                     <tr>
                         <td style="font-size:  16px">需求附件</td>
@@ -68,15 +68,15 @@
                     </tr>
                     <tr>
                         <td style="font-size:  16px">技术方案</td>
-                        <td colspan="3" ><input type="text" class="input" placeholder="请输入技术方案" v-model="Scheme"></td>
+                        <td colspan="3" ><input type="text" class="input" style="width:650px" placeholder="请输入技术方案" v-model="Scheme"></td>
                     </tr>
                     <tr>
                         <td style="font-size:  16px">技术难点</td>
-                        <td colspan="3" ><input type="text" class="input" placeholder="请输入技术难点" v-model="Difficulties"></td>
+                        <td colspan="3" ><input type="text" class="input" style="width:650px" placeholder="请输入技术难点" v-model="Difficulties"></td>
                     </tr>
                     <tr>
                         <td style="font-size:  16px">需求前置条件</td>
-                        <td colspan="3" ><input type="text" class="input" placeholder="请输入需求前置条件" v-model="Precondition"></td>
+                        <td colspan="3" ><input type="text" class="input" style="width:650px" placeholder="请输入需求前置条件" v-model="Precondition"></td>
                     </tr>
                 </Table>
             </Col>
@@ -103,7 +103,7 @@ import DemandApi from "../api/Demand";
 })
 export default class DemandManagement extends Vue {
   data: any = {};
-  result:any="";
+  result: any = "";
   Maker: any = "";
   DeterminingP: any = "";
   PutTime: any = "";
