@@ -8,7 +8,9 @@ class User extends Request {
         return [];
     }
     async logout() { }
-    async login() { }
+    async login(User:string,PassWord:string){
+        return await  this._post('login',{User,PassWord})
+    }
 }
 const r = new User();
 export default r

@@ -82,12 +82,8 @@
             </Col>
         </Row>
         <Row>
-            <Col span="9">
-                &nbsp;
-            </Col>
-            <Col span="1">
-                 <Button class="layui-btn layui-btn-normal" size="lg" @click="save()">保存</Button>
-            </Col>
+            <Col span="9"> &nbsp;</Col>
+            <Col span="1"><Button class="layui-btn layui-btn-normal" size="lg" @click="save()">保存</Button></Col>
         </Row>
     </div>
 </template>

@@ -11,7 +11,7 @@
                         <td style="width:  150px;font-size:  16px">项目名称</td>
                         <td style="width:  150px" ><input type="text" class="input" placeholder="请输入项目名称"></td>
                         <td style="width:  150px;font-size:  16px">立项时间</td>
-                        <td style="width:  150px"  ><Input type="date" class="input" placeholder="请输入提出时间" v-model="PutTime"></Input></td>
+                        <td style="width:  150px"  ><Input type="date" class="input" placeholder="请输入提出时间"></Input></td>
                     </tr>
                     <tr>
                         <td style="width:150px ;font-size:  16px">项目经理</td>
@@ -30,12 +30,17 @@
                         <td><input type="text" class="input" placeholder="请输入此次周期预算"></td>
                     </tr>
                 </Table>
+                
             </Col>
+        </Row>
+        <Row>
+            <Col span="9"> &nbsp;</Col>
+            <Col span="1"><Button class="layui-btn layui-btn-normal" size="lg" @click="save()">保存</Button></Col>
         </Row>
         <Row>
             <Col span="2"> &nbsp;</Col>
             <Col span="8">
-                <Textarea></Textarea>
+
             </Col>
         </Row>
     </div>
@@ -64,6 +69,9 @@ export default class ProjectManagement extends Vue {
     phone:any=["","12345","09876"]
     selected(v:any){
        this.i=v
+    }
+    save(){
+        
     }
 }
 </script>
