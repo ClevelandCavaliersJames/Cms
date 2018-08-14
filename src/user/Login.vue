@@ -82,13 +82,6 @@ export default class Login extends Vue {
 .length {
   width: 300px;
 }
-/* .box {
-  width: 500px;
-  height: 250px;
-  background: url(../assets/image/LoginUI/login1.png) no-repeat center;
-  -webkit-transition: 0.5s;
-  background-size: 500px;
-} */
 .box:hover {
   background-size: 800px;
 }
