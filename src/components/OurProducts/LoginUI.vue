@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <!-- <Row>       
+    <div class="dl">
+        <Row>       
             <Col span="12">
                 &nbsp;
             </Col>
@@ -46,7 +46,7 @@
                 </Col>
             </form>
             
-        </div> -->
+        </div>
         <div class="box" >
 
         </div>
@@ -92,7 +92,7 @@ export default class LoginUI extends Vue {
 .box:hover {
   background-size: 800px;
 }
-/* .dl{
+.dl{
     width: 100%;
     height: 516px;
     background-repeat:no-repeat;
@@ -122,8 +122,8 @@ export default class LoginUI extends Vue {
     border-radius: 2px;
 }
 .aa:HOVER{ 
--webkit-transition:border linear .2s,-webkit-box-shadow linear .5s; 
-border-color:rgba(21, 18, 209, 0.75); 
--webkit-box-shadow:0 0 18px rgba(21, 18, 209, 0.75); 
-}  */
+    -webkit-transition:border linear .2s,-webkit-box-shadow linear .5s; 
+    border-color:rgba(21, 18, 209, 0.75); 
+    -webkit-box-shadow:0 0 18px rgba(21, 18, 209, 0.75); 
+} 
 </style>

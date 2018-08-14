@@ -1,9 +1,7 @@
 <template>
     <div>
         <Row>
-            <Col span="2">
-                &nbsp;
-            </Col>
+            <Col span="2"> &nbsp; </Col>
             <Col span="8">
                 <Table class="layui-table">
                     <tr>
@@ -32,6 +30,12 @@
                         <td><input type="text" class="input" placeholder="请输入此次周期预算"></td>
                     </tr>
                 </Table>
+            </Col>
+        </Row>
+        <Row>
+            <Col span="2"> &nbsp;</Col>
+            <Col span="8">
+                <Textarea></Textarea>
             </Col>
         </Row>
     </div>
