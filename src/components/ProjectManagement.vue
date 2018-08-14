@@ -2,7 +2,7 @@
     <div>
         <Row>
             <Col span="2">
-                <h2>项目管理</h2>
+                &nbsp;
             </Col>
             <Col span="8">
                 <Table class="layui-table">
@@ -10,33 +10,26 @@
                         <td colspan="4" style="text-align:center;font-size:26px">以下需求由项目经理填写</td>
                     </tr>
                     <tr>
+                        <td style="width:  150px;font-size:  16px">项目名称</td>
+                        <td style="width:  150px" ><input type="text" class="input" placeholder="请输入项目名称"></td>
+                        <td style="width:  150px;font-size:  16px">立项时间</td>
+                        <td style="width:  150px"  ><Input type="date" class="input" placeholder="请输入提出时间" v-model="PutTime"></Input></td>
+                    </tr>
+                    <tr>
                         <td style="width:150px ;font-size:  16px">项目经理</td>
-                        <td style="width:150px" contenteditable="true"></td>
+                        <td><input type="text" class="input" placeholder="请输入项目经理"></td>
                         <td style="width:150px;font-size:  16px">联系人电话</td>
-                        <td style="width:150px" contenteditable="true"></td>
+                        <td><input type="text" class="input" placeholder="请输入联系人电话"></td>
                     </tr>
-                    <tr>
+                    <!-- <tr>
                         <td style="font-size:  16px">项目参与人员及负责人</td>
-                        <td>   
-                            <Form style="width:200px">
-                                <Select v-model="index" :options="name"  @change="selected(index)" >
-                                </Select>
-                            </Form>
-                        </td>
-                        <td style="font-size:  16px">联系人电话</td>
-                        <td>{{phone[i]}}</td>
-                    </tr>
+                        <td colspan="3" ><input style="width:650px" type="text" class="input" placeholder="请输入参与人员信息"></td>
+                    </tr> -->
                     <tr>
-                        <td style="font-size:  16px">需求说明书</td>
-                        <td colspan="3" contenteditable="true" :v-model="t"></td>
-                    </tr>
-                    <tr>
-                        <td style="font-size:  16px">需求目标</td>
-                        <td colspan="3" contenteditable="true"></td>
-                    </tr>
-                    <tr>
-                        <td style="font-size:  16px">项目里程碑</td>
-                        <td colspan="3" contenteditable="true"></td>
+                        <td style="width:150px ;font-size:  16px">周期</td>
+                        <td><input type="text" class="input" placeholder="请输入预计周期"></td>
+                        <td style="width:150px;font-size:  16px">预算</td>
+                        <td><input type="text" class="input" placeholder="请输入此次周期预算"></td>
                     </tr>
                 </Table>
             </Col>
@@ -72,4 +65,10 @@ export default class ProjectManagement extends Vue {
 </script>
 
 <style scope>
+.input {
+  border-left-width: 0px;
+  border-bottom-width: 0px;
+  border-top-width: 0px;
+  border-right-width: 0px;
+}
 </style>
