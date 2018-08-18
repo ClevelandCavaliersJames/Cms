@@ -8,7 +8,7 @@ export default class Config extends KoaConfig {
      //:any 表示不检测类型
     get dbConfig():any{
         return {
-            database:'cms',
+            database:'manager',
             username:'root',
             password:'root',
             options:{
