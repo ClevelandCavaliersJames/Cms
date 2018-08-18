@@ -158,6 +158,23 @@ export default class DemandManagement extends Vue {
       this.$msg("保存失败");
     }
   }
+
+  mounted() {
+    //组件被加载的时候触发
+    // setTimeout(function() {
+    //   console.log("1");
+    // }, 0);
+
+    // process.nextTick(function() {
+    //   console.log("3");
+    // });
+
+    // console.log("2");
+
+    // setImmediate(function() {
+    //   console.log("4");
+    // });
+  }
 }
 </script>
 
